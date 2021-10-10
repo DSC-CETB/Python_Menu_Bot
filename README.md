@@ -2,11 +2,11 @@
     <h1> MENU BOT <i> (Terminal)</i></h1>
 </div>
 
-![Contributors](https://img.shields.io/github/contributors/yagyandatta/Python_Menu_Bot?color=darkgreen&style=plasitc)
-![Forks](https://img.shields.io/github/forks/yagyandatta/Python_Menu_Bot?color=blue&style=plasitc)
-![stars](https://img.shields.io/github/stars/yagyandatta/Python_Menu_Bot?style=plastic)
-![pull_request](https://img.shields.io/github/issues-pr/yagyandatta/Python_Menu_Bot?style=plastic)
-![watchers](https://img.shields.io/github/watchers/yagyandatta/Python_Menu_Bot?style=social)
+![Contributors](https://img.shields.io/github/contributors/DSC-CETB/Python_Menu_Bot?color=darkgreen&style=plasitc)
+![Forks](https://img.shields.io/github/forks/DSC-CETB/Python_Menu_Bot?color=blue&style=plasitc)
+![stars](https://img.shields.io/github/stars/DSC-CETB/Python_Menu_Bot?style=plastic)
+![pull_request](https://img.shields.io/github/issues-pr/DSC-CETB/Python_Menu_Bot?style=plastic)
+![watchers](https://img.shields.io/github/watchers/DSC-CETB/Python_Menu_Bot?style=social)
 
 ***
 
@@ -30,7 +30,7 @@ pip install -r requirements.txt
 
 ## **How to contribute**
 
-This repository accepts python scripts. Before making a contribution please make sure you have gone through our [contributing guidelines](https://github.com/yagyandatta/Python_Menu_Bot/blob/master/.github/CONTRIBUTING.md).
+This repository accepts python scripts. Before making a contribution please make sure you have gone through our [contributing guidelines](https://github.com/DSC-CETB/Python_Menu_Bot/blob/master/.github/CONTRIBUTING.md).
 
 ## **Contribute On**
 
@@ -50,15 +50,15 @@ You can start contributing to the project by:
 ## Screenshots
 
 <p float="left">
-    <img src=https://raw.githubusercontent.com/yagyandatta/Python_Menu_Bot/master/.github/images/welcome_screen.png height="200" >
-    <img src=https://github.com/yagyandatta/Python_Menu_Bot/blob/master/.github/images/main_menu.png?raw=true  height="200">
-    <img src=https://github.com/yagyandatta/Python_Menu_Bot/blob/master/.github/images/linux_menu.png?raw=true  height="200">
-    <img src=https://github.com/yagyandatta/Python_Menu_Bot/blob/master/.github/images/calender_output.png?raw=true  height="200">
-    <img src=https://github.com/yagyandatta/Python_Menu_Bot/blob/master/.github/images/ram_output.png?raw=true  height="200">
-    <img src=https://github.com/yagyandatta/Python_Menu_Bot/blob/master/.github/images/docker_menu.png?raw=true  height="200">
-    <img src=https://github.com/yagyandatta/Python_Menu_Bot/blob/master/.github/images/hadoop_menu.png?raw=true  height="200">
-    <img src=https://github.com/yagyandatta/Python_Menu_Bot/blob/master/.github/images/webserver_menu.png?raw=true  height="200">
-    <img src=https://github.com/yagyandatta/Python_Menu_Bot/blob/master/.github/images/aws_menu.png?raw=true  height="200">
+    <img src=https://raw.githubusercontent.com/DSC-CETB/Python_Menu_Bot/master/.github/images/welcome_screen.png height="200" >
+    <img src=https://github.com/DSC-CETB/Python_Menu_Bot/blob/master/.github/images/main_menu.png?raw=true  height="200">
+    <img src=https://github.com/DSC-CETB/Python_Menu_Bot/blob/master/.github/images/linux_menu.png?raw=true  height="200">
+    <img src=https://github.com/DSC-CETB/Python_Menu_Bot/blob/master/.github/images/calender_output.png?raw=true  height="200">
+    <img src=https://github.com/DSC-CETB/Python_Menu_Bot/blob/master/.github/images/ram_output.png?raw=true  height="200">
+    <img src=https://github.com/DSC-CETB/Python_Menu_Bot/blob/master/.github/images/docker_menu.png?raw=true  height="200">
+    <img src=https://github.com/DSC-CETB/Python_Menu_Bot/blob/master/.github/images/hadoop_menu.png?raw=true  height="200">
+    <img src=https://github.com/DSC-CETB/Python_Menu_Bot/blob/master/.github/images/webserver_menu.png?raw=true  height="200">
+    <img src=https://github.com/DSC-CETB/Python_Menu_Bot/blob/master/.github/images/aws_menu.png?raw=true  height="200">
 </p>
 
 ## **Demo**
