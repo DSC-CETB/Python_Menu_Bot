@@ -28,21 +28,15 @@ See the [README](https://github.com/DSC-CETB/Python_Menu_Bot/blob/master/README
 
 <img align="right" width="300" src="https://firstcontributions.github.io/assets/Readme/clone.png" alt="clone this repository" />
 
-```
-git clone https://github.com/DSC-CETB
-/
-Py-Scripts
-.git
+```shell
+https://github.com/DSC-CETB/Python_Menu_Bot.git
 ```
 
 ## 3️⃣ **Add a remote (upstream) to original project repository**
 
-```
+```shell
 cd Py-Scripts
-git remote add upstream https://github.com/DSC-CETB
-/
-Py-Scripts
-.git
+git remote add upstream https://github.com/DSC-CETB/Python_Menu_Bot.git
 ```
 
 <img align="right" width="300" src="https://firstcontributions.github.io/assets/Readme/copy-to-clipboard.png" alt="copy URL to clipboard" />
@@ -51,7 +45,7 @@ Py-Scripts
 
 * It will help you to keep your forked repo updated with the original repo
 
-```
+```shell
 git checkout main
 git fetch upstream
 git merge upstream/main
@@ -62,7 +56,7 @@ git push origin main
 
 * Now create a branch using the `git checkout` command:
 
-```
+```shell
 git checkout -b your-new-branch-name
 ```
 
@@ -76,13 +70,13 @@ _(The name of the branch does not need to have the word add in it, but it's a re
 
 * After making changes or modification on to your code locally, you need to add these files to the staging area. Add those changes to the branch you just created using the `git add` command:
 
-```
+```shell
 git add --all
 ```
 
 * Once files added, you need to commit the changes to with an appropriate commit message using the `git commit` command:
 
-```
+```shell
 git commit -m "<your-message>"
 ```
 
@@ -90,7 +84,7 @@ git commit -m "<your-message>"
 
 * After committing the changes, you need to push the changes to master repo using `git push` command:
 
-```
+```shell
 git push origin <your-created-branch-name>
 ```
 
