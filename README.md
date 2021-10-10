@@ -51,14 +51,14 @@ You can start contributing to the project by:
 
 <p float="left">
     <img src=https://raw.githubusercontent.com/DSC-CETB/Python_Menu_Bot/master/.github/images/welcome_screen.png height="200" >
-    <img src=https://github.com/DSC-CETB/Python_Menu_Bot/blob/master/.github/images/main_menu.png?raw=true  height="200">
-    <img src=https://github.com/DSC-CETB/Python_Menu_Bot/blob/master/.github/images/linux_menu.png?raw=true  height="200">
-    <img src=https://github.com/DSC-CETB/Python_Menu_Bot/blob/master/.github/images/calender_output.png?raw=true  height="200">
-    <img src=https://github.com/DSC-CETB/Python_Menu_Bot/blob/master/.github/images/ram_output.png?raw=true  height="200">
-    <img src=https://github.com/DSC-CETB/Python_Menu_Bot/blob/master/.github/images/docker_menu.png?raw=true  height="200">
-    <img src=https://github.com/DSC-CETB/Python_Menu_Bot/blob/master/.github/images/hadoop_menu.png?raw=true  height="200">
-    <img src=https://github.com/DSC-CETB/Python_Menu_Bot/blob/master/.github/images/webserver_menu.png?raw=true  height="200">
-    <img src=https://github.com/DSC-CETB/Python_Menu_Bot/blob/master/.github/images/aws_menu.png?raw=true  height="200">
+    <img src=https://raw.githubusercontent.com/DSC-CETB/Python_Menu_Bot/blob/master/.github/images/main_menu.png?raw=true  height="200">
+    <img src=https://raw.githubusercontent.com/DSC-CETB/Python_Menu_Bot/blob/master/.github/images/linux_menu.png?raw=true  height="200">
+    <img src=https://raw.githubusercontent.com/DSC-CETB/Python_Menu_Bot/blob/master/.github/images/calender_output.png?raw=true  height="200">
+    <img src=https://raw.githubusercontent.com/DSC-CETB/Python_Menu_Bot/blob/master/.github/images/ram_output.png?raw=true  height="200">
+    <img src=https://raw.githubusercontent.com/DSC-CETB/Python_Menu_Bot/blob/master/.github/images/docker_menu.png?raw=true  height="200">
+    <img src=https://raw.githubusercontent.com/DSC-CETB/Python_Menu_Bot/blob/master/.github/images/hadoop_menu.png?raw=true  height="200">
+    <img src=https://raw.githubusercontent.com/DSC-CETB/Python_Menu_Bot/blob/master/.github/images/webserver_menu.png?raw=true  height="200">
+    <img src=https://raw.githubusercontent.com/DSC-CETB/Python_Menu_Bot/blob/master/.github/images/aws_menu.png?raw=true  height="200">
 </p>
 
 ## **Demo**
