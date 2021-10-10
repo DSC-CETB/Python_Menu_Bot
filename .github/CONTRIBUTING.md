@@ -29,14 +29,20 @@ See the [README](https://github.com/DSC-CETB/Python_Menu_Bot/blob/master/README
 <img align="right" width="300" src="https://firstcontributions.github.io/assets/Readme/clone.png" alt="clone this repository" />
 
 ```
-git clone https://github.com/yagyandatta/Py-Scripts.git
+git clone https://github.com/DSC-CETB
+/
+Py-Scripts
+.git
 ```
 
 ## 3️⃣ **Add a remote (upstream) to original project repository**
 
 ```
 cd Py-Scripts
-git remote add upstream https://github.com/yagyandatta/Py-Scripts.git
+git remote add upstream https://github.com/DSC-CETB
+/
+Py-Scripts
+.git
 ```
 
 <img align="right" width="300" src="https://firstcontributions.github.io/assets/Readme/copy-to-clipboard.png" alt="copy URL to clipboard" />
