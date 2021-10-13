@@ -61,12 +61,11 @@ while True:
 	os.system("tput setaf 7")
 	print("\t\t-----------------------")
 	msg = "press 0 : Linux Command menu\n" \
-		  "press 1 : Application Opener menu\n" \
-	      "Press 2 : Hadoop menu\n" \
-	      "Press 3 : Docker menu\n" \
-	      "Press 4 : Web Server menu\n" \
-	      "Press 5 : AWS menu\n" \
-	      "Press 6 : Exit\n" 
+	      "Press 1 : Hadoop menu\n" \
+	      "Press 2 : Docker menu\n" \
+	      "Press 3 : Web Server menu\n" \
+	      "Press 4 : AWS menu\n" \
+	      "Press 5 : Exit\n" 
 	print_msg_box(msg=msg, indent=2, title='All Services') 
 
 	if where == "local":
@@ -128,62 +127,9 @@ while True:
 				else:
 					print("Incorrect Input")
 				input("\nEnter To Continue...")
+# Hadoop...
+
 		elif int(ch) == 1:
-			while True:
-				os.system("clear")
-				os.system("tput setaf 2")
-				msg ="Press 1 : Check Date\n" \
-				     "Press 2 : Check Calender\n" \
-				     "Press 3 : Check your IP \n" \
-				     "Press 4 : Check RAM Status \n" \
-				     "Press 5 : Check Storage details \n" \
-				     "press 6 : To Clear Cache\n" \
-			       	 "press 7 : To Transfer File to Other Linux System\n" \
-				     "press 8 : Query any command details\n" \
-				     "press 9 : Go to Last Menu\n" \
-				     "press 10 : To Exit" 
-				print_msg_box(msg=msg, indent=2, title='Linux Command:') 
-				os.system("tput setaf 4")
-				ch=input("choose your option : ")
-				os.system("tput setaf 3")
-				print(ch)
-				if int(ch) == 0:
-					exit()
-				elif int(ch) == 1:
-					os.system("date")
-
-
-				elif int(ch) == 2:
-					os.system("cal")
-
-				elif int(ch) == 3:
-					os.system("ifconfig")
-
-				elif int(ch) == 4:
-					os.system("free -m")
-				elif int(ch) == 5:
-					os.system("df -h")
-				elif int(ch) == 6:
-					os.system("echo 3 > /proc/sys/vm/drop_caches")
-				elif int(ch) == 7:
-					ip = input("Enter IP of target system : ")
-					user = input("Enter username : ")
-					src = input("Enter your source file path : ")
-					dest = input("Enter destination folder path where you want to copy : ")
-					output = getpass.getstatusoutput("scp {} {}@{}:{}".format(src, user,ip,dest))
-				elif int(ch) == 8:
-					cmd_name = input("Enter Command Name: ")
-					os.system(f"man {cmd_name}")
-				elif int(ch) == 9:
-					break
-				elif int(ch) == 10:
-					exit()
-
-				else:
-					print("Incorrect Input")
-				input("\nEnter To Continue...")
-
-		elif int(ch) == 2:
 			while True:
 				os.system("clear")
 				os.system("tput setaf 4")
@@ -203,14 +149,14 @@ while True:
 				os.system("tput setaf 4") 
 				ch=input("choose your option : ")
 				print(ch)
-						#Hadoop-installation
+	#Hadoop-installation
 
 
 				if int(ch) == 1:
 					os.system("rpm -ivh jdk-8u171-linux-x64.rpm;rpm -ivh hadoop-1.2.1-1.x86_64.rpm --force")
 
 
-						#namenode
+	#namenode
 
 				elif int(ch) == 2:
 					os.system("rm -rf /nn")
@@ -248,7 +194,7 @@ while True:
 				elif int(ch) == 3:
 					os.system('hadoop-daemon.sh start namenode')
 
-						#dataNode
+	#dataNode
 
 				elif int(ch) == 4:
 					os.system("rm -rf /dn")
@@ -286,7 +232,7 @@ while True:
 					os.system("hadoop-daemon.sh start datanode")
 
 
-						#clint
+	#clint
 
 				elif int(ch) == 6:
 					x=("""<?xml version="1.0"?>
@@ -304,7 +250,7 @@ while True:
 					f.write(x)
 					f.close
 
-						#other basic commands
+	#other basic commands
 
 				elif int(ch) == 7:
 					os.system("hadoop dfsadmin -report | less")
@@ -327,7 +273,7 @@ while True:
 
 #docker
 
-		elif int(ch) == 3:
+		elif int(ch) == 2:
 			while True:
 				os.system("clear")
 				os.system("tput setaf 2")
@@ -354,7 +300,7 @@ while True:
 				if int(ch) == 0:
 					os.system("rpm -q docker-ce")
 
-						#docker installation
+	#docker installation
 
 				elif int(ch) == 1:
 					os.system('yum install docker-ce')
@@ -399,7 +345,7 @@ while True:
 
 # webserver
 
-		elif int(ch) == 4:
+		elif int(ch) == 3:
 			while True:
 				os.system("clear")
 				os.system("tput setaf 2")
@@ -447,7 +393,7 @@ while True:
 
 # AWS
 
-		elif int(ch) == 5:
+		elif int(ch) == 4:
 			while True:
 				os.system("clear")
 				os.system("tput setaf 2")
@@ -585,7 +531,7 @@ while True:
 					print("Incorrect Number")
 					input("\n Enter To Continue...")
 
-		elif int(ch) == 6:
+		elif int(ch) == 5:
 			exit()
 
 
@@ -1013,10 +959,10 @@ while True:
 
 	else:
 		os.system("tput setaf 1")
-		print("login is not supported....")
+		print("Login is not supported....")
 		exit()
 
-	input("\nplease Enter to Continue....")
+	input("\nPlease Enter to Continue....")
 
 
 
