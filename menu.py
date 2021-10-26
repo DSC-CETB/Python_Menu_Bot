@@ -13,6 +13,7 @@ print("""
 \t2. Deepak Patra
 \t3. Laxman Naik
 \t4. Sweta Sardar
+\t5. Abhishek Dwibedy
 """)
 input("\nEnter To Continue...")
 os.system("clear")
@@ -143,7 +144,11 @@ while True:
 				     "press 8 : Check SafeMode(nameNode)\n" \
 				     "press 9 : Disable Safemode in Namenode \n" \
 				     "press 10 : Upload a File into Cluster\n" \
-				     "press 11 : Go Back\n" \
+					 "press 11 : Read the File Upload into the Cluster\n" \
+					 "press 12 : Create a File in Cluster\n" \
+					 "press 13 : Delete a File in Cluster\n" \
+					 "press 14 : List Files in Cluster\n" \
+				     "press 15 : Go Back\n" \
 				     "press 0 : Exit.."
 				print_msg_box(msg=msg, indent=2, title='Hadoop Command:')
 				os.system("tput setaf 4") 
@@ -263,6 +268,17 @@ while True:
 					name = input('Enter File Name :')
 					os.system(f"hadoop fs -put {name}/")
 				elif int(ch) == 11:
+					name = input('Enter File Name :')
+					os.system(f"hadoop fs -cat {name}/")
+				elif int(ch) == 12:
+					name = input('Enter File Name :')
+					os.system(f"hadoop fs -touchz {name}/")
+				elif int(ch) == 13:
+					name = input('Enter File Name :')
+					os.system(f"hadoop fs -rm {name}/")
+				elif int(ch) == 14:
+					os.system(f"hadoop fs -ls /")
+				elif int(ch) == 15:
 					break
 				elif int(ch) == 0:
 					exit()
@@ -280,18 +296,20 @@ while True:
 				msg = "press 0 : Verify Docker is Installed or Not\n" \
 				      "Press 1 : Install Docker\n" \
 				      "Press 2 : Start Docker\n" \
-				      "Press 3 : List All Docker Images\n" \
-				      "Press 4 : Pull Docker Image\n" \
-				      "Press 5 : Launch a Container with Name\n" \
-				      "Press 6 : List Running Docker Containers\n" \
-				      "press 7 : Start a Container\n" \
-				      "press 8 : Get Terminal of runing container\n" \
-				      "press 9 : Stop a Container \n" \
-				      "Press 10 : Delete a Container\n" \
-				      "Press 11: Delete an Image\n" \
-				      "Press 12: Delete all Container\n" \
-				      "Press 13: Go Back\n" \
-				      "Press 14: Exit.." 
+					  "Press 3 : Search Docker Image\n" \
+				      "Press 4 : List All Docker Images\n" \
+				      "Press 5 : Pull Docker Image\n" \
+				      "Press 6 : Launch a Container with Name\n" \
+				      "Press 7 : List Running Docker Containers\n" \
+				      "press 8 : Start a Container\n" \
+				      "press 9 : Get Terminal of runing container\n" \
+					  "press 10 : Launch GUI Software (i.e. Firefox) inside Docker Container\n" \
+				      "press 11 : Stop a Container \n" \
+				      "Press 12 : Delete a Container\n" \
+				      "Press 13 : Delete an Image\n" \
+				      "Press 14 : Delete all Container\n" \
+				      "Press 15 : Go Back\n" \
+				      "Press 16 : Exit.." 
 				print_msg_box(msg=msg, indent=2, title='Docker Command:')
 				os.system("tput setaf 4") 
 				ch=input("choose your option : ")
@@ -307,36 +325,42 @@ while True:
 				elif int(ch) == 2:
 					os.system('systemctl start docker')
 				elif int(ch) == 3:
-					os.system('docker images -a')
+					OS = input("Enter the docker image Name : ")
+					os.system(f"docker search {OS}")
 				elif int(ch) == 4:
+					os.system('docker images -a')
+				elif int(ch) == 5:
 					OS = input("Enter docker image name :")
 					os.system(f'docker pull -i {OS}')
-				elif int(ch) == 5:  
+				elif int(ch) == 6:  
 					NAME = input("Enter imagename and version (OSname:00.00):")
 					myName = input("Give a new OS name :")
 					os.system(f'docker run -it --name {myName} {NAME}')
-				elif int(ch) == 6:
-					os.system('docker ps')
 				elif int(ch) == 7:
-					NAME = input("Enter The OS name :")
-					os.system(f'docker start {NAME}')
+					os.system('docker ps')
 				elif int(ch) == 8:
 					NAME = input("Enter The OS name :")
-					os.system(f'docker attach {NAME}')
+					os.system(f'docker start {NAME}')
 				elif int(ch) == 9:
 					NAME = input("Enter The OS name :")
-					os.system(f'docker stop {NAME}')
+					os.system(f'docker attach {NAME}')
 				elif int(ch) == 10:
 					NAME = input("Enter The OS name :")
-					os.system('docker rm -f {NAME}')
+					os.system('docker run -it --name {NAME} --env="DISPLAY" --net=host firefox:v1')
 				elif int(ch) == 11:
+					NAME = input("Enter The OS name :")
+					os.system(f'docker stop {NAME}')
+				elif int(ch) == 12:
+					NAME = input("Enter The OS name :")
+					os.system('docker rm -f {NAME}')
+				elif int(ch) == 13:
 					NAME = input("Enter The image name :")
 					os.system('docker rmi -f {NAME}')
-				elif int(ch) == 12:
-					os.system('docker rm `docker ps -a -q` ')
-				elif int(ch) == 13:
-					break
 				elif int(ch) == 14:
+					os.system('docker rm `docker ps -a -q` ')
+				elif int(ch) == 15:
+					break
+				elif int(ch) == 16:
 					exit()
 
 				else:
@@ -595,8 +619,12 @@ while True:
 				    "Press 5 : Check the Connected Datanodes\n" \
 				    "press 6 : Check SafeMode in NameNode\n" \
 				    "press 7 : Disable Safemode in Namenode\n " \
-				    "press 8 : Go Back..\n" \
-				    "press 9 : Exit \n"
+					"press 8 : Upload a File into Cluster\n" \
+					"press 9 : Read the File Upload into the Cluster\n" \
+					"press 10 : Create a File in Cluster\n" \
+					"press 11 : Delete a File in Cluster\n" \
+					"press 12 : List Files in Cluster\n" \
+				    "press 13 : Go Back..\n" 
 				print_msg_box(msg=msg, indent=2, title='Hadoop Command:')
 				os.system("tput setaf 4")
 				ch=input("choose your option : ")
@@ -712,8 +740,22 @@ while True:
 				elif int(ch) == 7:
 					os.system("ssh {} hadoop dfsadmin -safemode leave".format(ip))
 				elif int(ch) == 8:
-					break
+					name = input("Enter File Name :")
+					os.system("ssh {} hadoop fs -put {name}/".format(ip))
 				elif int(ch) == 9:
+					name = input('Enter File Name :')
+					os.system("ssh {} hadoop fs -cat {name}/".format(ip))
+				elif int(ch) == 10:
+					name = input('Enter File Name :')
+					os.system("ssh {} hadoop fs -touchz {name}/".format(ip))
+				elif int(ch) == 11:
+					name = input('Enter File Name :')
+					os.system("ssh {} hadoop fs -rm {name}/".format(ip))
+				elif int(ch) == 12:
+					os.system(f"hadoop fs -ls /")
+				elif int(ch) == 13:
+					break
+				elif int(ch) == 0:
 					exit()
 				else:
 					print("Incorrect Number")
