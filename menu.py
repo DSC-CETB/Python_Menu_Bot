@@ -282,7 +282,6 @@ while True:
 					break
 				elif int(ch) == 0:
 					exit()
-
 				else:
 					print("Incorrect Number")
 				input("\ncontinue...")
