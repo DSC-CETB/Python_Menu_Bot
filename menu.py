@@ -86,7 +86,7 @@ while True:
 				     "press 6 : To Clear Cache\n" \
 			       	 "press 7 : To Transfer File to Other Linux System\n" \
 				     "press 8 : Query any command details\n" \
-				     "press 9 : Go to Last Menu\n" \
+				     "press 9 : Go Back\n" \
 				     "press 10 : To Exit" 
 				print_msg_box(msg=msg, indent=2, title='Linux Command:') 
 				os.system("tput setaf 4")
